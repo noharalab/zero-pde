@@ -65,7 +65,7 @@ void draw() {
   fill(
     map(second(), 0, 60, 0, 360),
     map(second(), 0, 24, 0, 100),
-    map(minute(), 0, 60, 0, 100)
+    map(minute(), 0, 60, 50, 100)
   );
   ellipse(ballX, ballY, ballSize, ballSize);
 }
