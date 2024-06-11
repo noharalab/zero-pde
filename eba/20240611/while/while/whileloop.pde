@@ -12,11 +12,14 @@ void draw() {
 
   float tileW = width / tilesX;
   float tileH = height / tilesY;
-
+  
+  // Moves the origin to the center of the first tile.
   translate(tileW / 2, tileH / 2);
 
+  // initializes the x-coordinate counter to 0
   int x = 0;
-  while (x < tilesX) {
+  // Outer & inner loop iterates over the column of tiles while x&y is less than tilesX, Y
+  while (x < tilesX) { 
     int y = 0;
     while (y < tilesY) {
       
