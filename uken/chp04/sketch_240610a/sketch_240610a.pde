@@ -1,5 +1,5 @@
 ArrayList<ArrayList<PVector>> curves;
-float distanceThreshold = 4;
+float distanceThreshold = 16;
 
 void setup() {
   size(800, 600);
