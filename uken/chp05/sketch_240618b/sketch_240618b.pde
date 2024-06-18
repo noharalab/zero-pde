@@ -23,10 +23,10 @@ void draw() {
   int f = floor(count);
 
   if (f == 0) {
-    image(img0, 245, 245);
+    image(img1, 245, 245);
   }
   else if (f == 1) {
-    image(img1, 245, 245);
+    image(img2, 245, 245);
   }
   else if (f == 2) {
     image(img2, 245, 245);
@@ -35,10 +35,16 @@ void draw() {
     image(img3, 245, 245);
   }
   
-  if (mouseX < 100) {
+  if (mouseX < 200 && mouseY < 200) {
     image(img0, 245, 245);
   }
-  else if (mouseX > 500) {
+  else if (mouseX > 400 && mouseY < 200) {
+    image(img1, 245, 245);
+  }
+  else if (mouseX < 200 && mouseY > 400) {
+    image(img2, 245, 245);
+  }
+  else if (mouseX > 400 && mouseY > 400) {
     image(img3, 245, 245);
   }
 }
