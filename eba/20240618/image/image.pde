@@ -23,7 +23,7 @@ void draw() {
   float camX = map(mouseX, 0, width, -1000, 1000); // Camera position based on mouseX
   float camY = map(mouseY, 0, height, -1000, 1000); // Camera position based on mouseY
   float camZ = height / 2.0 / tan(PI * 30.0 / 180.0);
-  //camera(camX, camY, camZ, width/2, height/2, 0, 0, 1, 0);
+  camera(camX, camY, camZ, width/2, height/2, 0, 0, 1, 0);
 
   float tileW = width / tilesX;
   float tileH = height / tilesY;
@@ -32,7 +32,7 @@ void draw() {
   push();
   translate(width/2, height/2);
   scale(0.8);
-  //float rotation = map(sin(radians(frameCount * 0.5)), 1, -1, -360, 0);
+  float rotation = map(sin(radians(frameCount * 0.5)), 1, -1, -360, 0);
   //rotateY(radians(rotation));
   
   for (int x = 0; x < tilesX; x++) {
